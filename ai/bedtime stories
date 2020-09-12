@@ -1,0 +1,81 @@
+Before creating a bot, I would suggest that you understand the main aspects of bot building - Flow & Natural Language Understanding. I have written a detailed post on Flow & NLU here. Do read it before moving forward.
+
+Now when you have understood the basics of chatbot building, let’s get right into it.
+
+You can create a chatbot in 3 ways -
+
+Code Everything Yourself - Use open source libraries like Apache Open NLP or Stanford Open NLP to create your own Flow and NLU.
+Pros - You control everything which means that you can create custom features for your users
+Cons -
+It is going to take up a lot of your time; whatever time you could have spent making the product better will be spent just understanding and building a basic chatbot.
+You need to have a lot of prior knowledge of coding in (preferably ) Python/Java.
+You also need to have some exposure to Machine Learning problems, else the time taken to get something up and running will go up significantly.
+Use NLP platforms to do the Intent and Entity extraction - This takes over the load of understanding Machine Learning, but you still need to code your own Flow
+Pros - You can use APIs from Api. ai, Wit , LUIS, IBM Watson for the NLU part and also retain the flexibility of creating custom features
+Cons -
+This is also very time taking, because you have to code all of the flow on your back-end.
+You need to have a lot of prior knowledge of coding in (preferably ) Python/Java.
+Use DIY (Do It Yourself) platforms for building a bot - There are some platforms like which provide you with Drag ‘n’ Drop features to build chat bots in very less time and without any coding. There are two types of platforms -
+Flow + NLU DIY platforms -
+ChatterOn - Provides you with a dashboard to build AI based chatbots without any coding in less than 10 minutes. Enables you to create both NLU and flow on the platform and helps you save a huge amount of time on building and deploying a chatbot. They also help you maintain, promote and deploy your chatbot on multiple platforms.
+Flow Only platforms -
+Chatfuel - Allows you to pick from existing templates or create your own bot with an easy to use interface. Allows you to create Facebook specific bots with rich UI elements directly from the platform.
+Flow XO - Provides a drag and drop UI and allows a lot of external integrations. Mainly useful for bringing many services together and automating internal processes.
+If you want to build a chatbot for your business, I would suggest you to try using one of the DIY platforms because they help you save a lot of time and get something running without a single line of code.
+
+I have done a complete Pro/Con analysis of all the platforms here. Do give it a read.
+
+
+//////////////////////
+
+
+We had started developing chat bots in April 2016 and tried a lot of platforms. Here is a small brief on all the platforms we tried and their shortcomings-
+
+Non - Coding Based
+
+Chatfuel -
+
+Pros - Allows you to pick from existing templates or create your own bot with an easy to use interface. Allows you to create Facebook specific bots with rich UI elements directly from the platform.
+Cons - Limits your ability of using external APIs or using the data taken from the user and act on it. Has no AI and the maximum they let you do in terms of processing user inputs is matching sentences, which in our experience turns out to be pretty bad.
+FlowXo -
+
+Pros - Provides a drag and drop UI and allows a lot of external integrations. Mainly useful for bringing many services together and automating internal processes.
+Cons - No AI and does not support specific Facebook Messenger elements like Buttons, Quick Replies, Carousels.
+Motion AI
+
+Pros - Most powerful amongst the 3 listed here. You can create the flow of a bot by visually dragging and dropping modules.
+Cons - No AI, the best you can do is match sentences.
+Coding Based (for NLP)
+
+API. ai - You can use it without coding also, but the standalone integrations are bad with no flow management
+
+Pros - Great for adding NLP capabilities into your apps/website. You can leverage some pr-built intents if you are ready to pay a hefty sum per month.
+Cons - Tough to understand (we had many sessions to get a hang of it). Does not provide specific UI elements for integrating with multiple platforms. Unless you have a very simple use-case, the intents start clashing with each other and flow cannot be visualized properly.
+IBM Watson -
+
+Pros - Have a flow builder to go with AI based Natural Language Understanding.
+Cons - No integrations available with Messenger, Slack, Kik, Telegram, etc.
+Microsoft Bot Platform
+
+Pros - It helps you connect your bot to multiple messaging platforms easily.
+Cons - Does not do AI or flow. You have to handle everything yourself. The only thing it helps on is to help you connect to different platforms with 1 integration
+Wit
+
+Pros - You can create stories for your chatbot
+Cons - Bad UI/UX of the platform. Stories end up contradicting each other. No integrations to multiple platforms.
+We struggled with these platforms for months. All of them have some or the other limitation which cannot be overlooked.
+
+After building over 15 chatbots using these platforms, we decided to build our own platform for flow building + AI in a simple, easy to use dashboard. It started as an internal project to increase the speed of our own projects, but as time passed, we realized that what we have built can actually help a lot of people build and deploy faster. And, thus ChatterOn was born.
+
+We want to make it really simple for anyone to come and create an AI based chatbot wihtout any coding in less than 10 minutes! If you are looking to build a chatbot, I can say for sure that you should try out ChatterOn and compare it with any solution in the market.
+
+
+
+//////////////////////
+
+
+
+https://blog.chatteron.io/how-to-build-a-kick-ass-ux-for-your-chat-bot-f01b46c551db
+
+
+

@@ -1,0 +1,48 @@
+intents:
+  - greet
+  - goodbye
+  - stock_search
+
+entities:
+ - comname
+ - price
+
+slots:
+  comname:
+    type: text
+  price:
+    type: float
+
+templates:
+  utter_greet:
+  - text: "Hey! How are you?"
+  - text: "Hey!"
+  - text: "Hello!"
+  - text: "Hey! How are you doing?"
+
+  utter_ask_howcanhelp:
+  - text: "How can I help?"
+  - text: "What you would like to know?"
+  - text: "What you are looking for?"  
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "See you next time"
+  - text: "Goodbye"
+
+  utter_lookfor:
+  - text: "I'm looking for it"
+  - text: "I'm on it"
+  - text: "I'm searching it"
+
+  utter_ask_comname:
+  - text: "Which company you are looking for?"
+
+actions:
+  - utter_greet
+  - utter_ask_howcanhelp
+  - utter_goodbye
+  - utter_lookfor
+  - utter_ask_comname
+  - actions.ActionStockPriceSearch
+  - actions.ActionSuggest

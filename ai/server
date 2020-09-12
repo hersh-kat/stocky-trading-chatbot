@@ -1,0 +1,15 @@
+Droplet Name: ProjectX
+IP Address: 46.101.52.139
+Username: root
+Password: Warwickisthebest
+
+
+
+
+CL
+ssh root@46.101.52.139
+Warwickisthebest
+
+
+cd mycroft-core
+./start-mycroft.sh debug

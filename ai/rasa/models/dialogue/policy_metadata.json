@@ -1,0 +1,16 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "comname"
+      ]
+    }
+  },
+  "rasa_core": "0.8.0a4",
+  "max_history": 3,
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "__main__.StockPolicy"
+  ]
+}

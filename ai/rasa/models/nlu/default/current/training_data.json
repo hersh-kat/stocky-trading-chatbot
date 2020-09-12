@@ -1,0 +1,92 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "entities": [],
+        "text": "hey"
+      },
+      {
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 27,
+            "end": 32,
+            "value": "Apple",
+            "entity": "comname"
+          }
+        ],
+        "text": "what is the stock price of Apple"
+      },
+      {
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "Apple",
+            "entity": "comname"
+          }
+        ],
+        "text": "stock price of Apple"
+      },
+      {
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 27,
+            "end": 33,
+            "value": "Google",
+            "entity": "comname"
+          }
+        ],
+        "text": "what is the stock price of Google"
+      },
+      {
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "Google",
+            "entity": "comname"
+          }
+        ],
+        "text": "stock of Google"
+      },
+      {
+        "intent": "stock_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 3,
+            "value": "IBM",
+            "entity": "comname"
+          }
+        ],
+        "text": "IBM stock price"
+      }
+    ],
+    "regex_features": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "Apple",
+        "synonyms": [
+          "App",
+          "Appl",
+          "APPL"
+        ]
+      }
+    ]
+  }
+}

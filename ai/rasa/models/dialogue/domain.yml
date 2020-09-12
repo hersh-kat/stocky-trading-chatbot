@@ -1,0 +1,56 @@
+action_factory: null
+action_names:
+- utter_greet
+- utter_ask_howcanhelp
+- utter_goodbye
+- utter_lookfor
+- utter_ask_comname
+- action_search_stock
+- action_suggest
+actions:
+- utter_greet
+- utter_ask_howcanhelp
+- utter_goodbye
+- utter_lookfor
+- utter_ask_comname
+- actions.ActionStockPriceSearch
+- actions.ActionSuggest
+config:
+  store_entities_as_slots: true
+entities:
+- comname
+- price
+intents:
+- greet
+- goodbye
+- stock_search
+slots:
+  comname:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  price:
+    initial_value: null
+    max_value: 1.0
+    min_value: 0.0
+    type: rasa_core.slots.FloatSlot
+templates:
+  utter_ask_comname:
+  - text: Which company you are looking for?
+  utter_ask_howcanhelp:
+  - text: How can I help?
+  - text: What you would like to know?
+  - text: What you are looking for?
+  utter_goodbye:
+  - text: Bye
+  - text: See you next time
+  - text: Goodbye
+  utter_greet:
+  - text: Hey! How are you?
+  - text: Hey!
+  - text: Hello!
+  - text: Hey! How are you doing?
+  utter_lookfor:
+  - text: I'm looking for it
+  - text: I'm on it
+  - text: I'm searching it
+topics: []
