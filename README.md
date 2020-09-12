@@ -5,7 +5,7 @@ This is a group project, part of CS241 Software Engineering at the University of
 ![](https://i.imgur.com/bYErSqt.png)
 
 ## Technology Stack
-- Front End: JavaScript, Angular
+- Front End: JavaScript, Angular, [Rasa-UI](https://github.com/paschmann/rasa-ui)
 - AI Core: Python, [Rasa](https://github.com/RasaHQ/rasa)
 - Back End: Java, YahooFinanceAPI
 - Database: MySQL
